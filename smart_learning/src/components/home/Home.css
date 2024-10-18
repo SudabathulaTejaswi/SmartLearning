@@ -1,0 +1,94 @@
+/* Hero Section */
+.home-hero {
+    background: linear-gradient(to bottom,black, white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 60px 20px;
+    min-height: 60vh;
+}
+
+.home-hero .div-left {
+    flex: 1;
+    padding: 20px;
+}
+.home-hero .div-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-hero h1 {
+    font-weight: bold;
+}
+
+.home-hero p {
+    font-size: 1.2rem;
+}
+
+/* Call to Action Section */
+.home-cta {
+    padding: 60px 0;
+}
+.home-cta h2 {
+    color:blue;
+}
+
+.home-cta p {
+    color: blue
+}
+
+/* Card Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #00008B;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Buttons */
+.btn-light {
+    background-color: #f8f9fa;
+    color: #000;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.btn-light:hover {
+    background-color: #e2e6ea;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home-hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .home-hero .div-left, 
+    .home-hero .div-right {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .home-cta {
+        padding: 40px 0;
+    }
+}
+
+

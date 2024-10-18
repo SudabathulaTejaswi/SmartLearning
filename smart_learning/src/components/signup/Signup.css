@@ -1,0 +1,262 @@
+.containers
+{
+  background-color: #ccc;
+  margin:100px;
+}
+
+/* Container with gradient background */
+.signup-container {
+  display: flex;
+  height:125vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 10px; */
+}
+
+/* Left section with gradient and rounded border */
+.signup-leftmenu {
+  height:125vh;
+  color:white;
+  flex: 1;
+  background: linear-gradient(135deg, #313132, #232325);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 0 50% 50% 0;
+  
+}
+
+.signup-leftmenu h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.signup-leftmenu p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.signup-leftmenu .login-btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: #00008B;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Right section with the form */
+.signup-form-wrapper {
+  flex: 2;
+  padding: 50px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form-wrapper h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Profile image and file input */
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.preview-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  margin-bottom: 10px; /* Space between image and file input */
+}
+
+.placeholder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #888;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.file-input {
+  margin-bottom: 20px;
+}
+
+/* Form layout in two columns */
+.signup-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.signup-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.signup-form .form-control:focus {
+  border-color: #00008B;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.signup-form .error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e3342f;
+  font-size: 1.2rem;
+}
+
+.signup-form .btn-block {
+  grid-column: span 2; /* Submit button spans both columns */
+  width: 100%;
+  padding: 10px;
+  background-color: #00008B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn-block2
+{
+  grid-column: span 2;
+  background-color:#fffefeb1;
+  height:60px;
+  padding:10px;
+}
+
+.signup-form .btn-block:hover {
+  background-color: #00008B;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-leftmenu {
+    border-radius: 10px 10px 0 0;
+    padding: 30px;
+  }
+
+  .signup-form-wrapper {
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+  }
+
+  .signup-form {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
+.skill-input-container {
+  margin-bottom: 10px;
+}
+
+.skill-level-and-button {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjusts the space between the select dropdown and the button */
+}
+
+
+.select-level {
+  padding:13px;
+  font-size: 14px;
+}
+
+.ok-btn-small {
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ok-btn-small:hover {
+  background-color: #0056b3;
+}
+
+.selected-skills-list {
+  margin-top: 10px;
+}
+
+.remove-skill-btn {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+/* Container for skills list */
+.skill-list-container {
+  background-color: #f7f7f7; /* Light background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd; /* Optional border */
+}
+
+/* Styling for the skills list */
+.selected-skills-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap if they don't fit in one row */
+  gap: 10px; /* Space between items */
+  list-style-type: none; /* Remove bullets from list */
+  padding: 0;
+  margin: 0;
+}
+
+/* Each skill item */
+.selected-skills-list li {
+  background-color: #e0f7fa; /* Background color for each skill */
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* Remove button styling */
+.remove-skill-btn {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remove-skill-btn:hover {
+  text-decoration: underline;
+}

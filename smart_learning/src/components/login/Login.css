@@ -1,0 +1,162 @@
+
+.containers
+{
+  background-color: aliceblue;
+  margin:50px;
+}
+/* Profile Icon */
+.profile-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Forgotten Password Link */
+  .forgot-password {
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password p {
+    cursor: pointer;
+    color:  #00008B;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password p:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adjust existing CSS to align with these changes */
+  .signin-container {
+    display: flex;
+    height: 80vh;
+    /* margin:20px; */
+  }
+  
+  .signin-leftmenu {
+    flex: 1;
+    background: linear-gradient(135deg,  #0e0e0f,  #071022);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 0 50% 50% 0;
+    color: white;
+  }
+  
+  .signin-leftmenu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .signin-leftmenu p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .signup-btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: white;
+    color:  #1e3c72;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .signin-form-wrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .signin-form-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .signin-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .is-invalid {
+    border-color: red;
+  }
+  
+  .error-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 1.2rem;
+  }
+  
+  .btn-block {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color:  #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-block:hover {
+    background-color: #1e3c72;
+  }
+  
+  @media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column; /* Stack left menu and form on top of each other */
+    }
+
+    .signin-leftmenu {
+        border-radius: 10px 10px 0 0; /* Adjust border radius for mobile */
+        padding: 30px;
+        text-align: center; /* Center text in left menu */
+    }
+
+    .signin-form-wrapper {
+        border-radius: 0 0 10px 10px; /* Adjust border radius for mobile */
+        padding: 30px;
+    }
+
+    .signin-leftmenu h2 {
+        font-size: 2rem;
+    }
+
+    .signin-leftmenu p {
+        font-size: 1rem;
+    }
+
+    .signup-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .signin-form-wrapper h2 {
+        font-size: 1.5rem;
+    }
+}
